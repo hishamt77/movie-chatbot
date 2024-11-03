@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHROPLEX BOT</title>
+    <link rel="stylesheet" href="chatnew.css">
+</head>
+<body>
+
+<div class="chatbot-container">
+    <h2>CHROPLEX BOT</h2>
+    <div class="chat-window" id="chatWindow">
+        <!-- Chat messages will be added here -->
+    </div>
+    <input type="text" id="userInput" placeholder="ENTER THE NAME OF FILES" autocomplete="off">
+    <button onclick="sendMessage()">Send</button>
+</div>
+
+<script>
+    function sendMessage() {
+        const userInput = document.getElementById("userInput").value.trim();
+        
+        if (userInput) {
+            // Display the user input in the chat window
+            addMessage("You: " + userInput, "user-message");
+            
+            // Display the chatbot's response
+            addMessage("Chatbot:Don't you know it's illegal,go and buy or rent it from the original streaming partner.RASCAL!!", "bot-message");
+            
+            // Clear the input field
+            document.getElementById("userInput").value = "";
+        }
+    }
+
+    function addMessage(message, className) {
+        const chatWindow = document.getElementById("chatWindow");
+        const messageDiv = document.createElement("div");
+        messageDiv.className = className;
+        messageDiv.innerText = message;
+        chatWindow.appendChild(messageDiv);
+        
+        // Scroll to the bottom of the chat window
+        chatWindow.scrollTop = chatWindow.scrollHeight;
+    }
+</script>
+
+</body>
+<!-- <video width="600" controls autoplay loop muted>
+     <source src="./views/IMG_0936.MP4" type="video/MP4"> -->
+    <img src="./IMG_0936.gif" alt="" width="600px">   
+</video>
+</html>

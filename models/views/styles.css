@@ -1,0 +1,82 @@
+/* styles.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    background-image: url(./IMG_0947.JPEG);
+    background-size: cover;
+   
+}
+.all
+{
+    width: 100%;
+    border: 1px ;
+    color: white;
+    width:60rem;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height:30rem;
+    padding-top: 60px;
+}
+h2{
+    margin-bottom: 1.5rem;
+
+}
+input[type=text],input[type=password]
+{
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
+button
+{
+    width: 100px;
+    height: 40px;
+    background-color:rgb(95, 89, 89);
+    color: white;
+}
+button:hover {
+    background-color: #232628;
+}
+
+.log-btn,
+.reg-btns {
+    margin-bottom: 2rem;
+}
+/* styles.css */
+
+body, .corner-wrapper {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Aligns horizontally */
+    align-items: flex-end; /* Aligns vertically */
+}
+
+.corner-card {
+    width: 1000px;
+    padding: 1rem;
+    /* background-color: #fff; */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 20px; /* Adds spacing from the edges */
+    text-align: center;
+}
+p{
+    color: white;
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger;
+    margin-top: 5rem;
+}
+button,a{
+    color: white;
+}
